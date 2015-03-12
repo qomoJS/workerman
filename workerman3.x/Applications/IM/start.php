@@ -1,8 +1,6 @@
 <?php
-	require_once './Workerman/Autoloader.php';
 	// 引入Workerman命名空间
-	use Workerman\WebServer;
-
+	use Workerman\Worker;
 	// 初始化一个worker
 	$httpWorker = new Worker("http://0.0.0.0:2558");
 	// 设置进程数量
@@ -13,9 +11,6 @@
 		$connection->send(var_dump($connection));
 		$connection->send($data);
 	};
-
-	// 运行worker
-	Worker::runAll();
 
 
 
