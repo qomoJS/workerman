@@ -5,6 +5,7 @@
  */
 
 ini_set('display_errors', 'on');
+
 use WorkerMan\Worker;
 
 require_once __DIR__ . '/Workerman/Autoloader.php';

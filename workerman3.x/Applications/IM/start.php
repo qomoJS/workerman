@@ -8,8 +8,9 @@
 
 	// 接收到浏览器数据时原路返回
 	$httpWorker->onMessage = function($connection,$data){
-		$connection->send(var_dump($connection));
+		
 		$connection->send($data);
+
 	};
 
 
