@@ -10,7 +10,7 @@
 	$httpWorker->onMessage = function($connection,$data){
 		$connection->send(var_dump($connection));
 		$connection->send($data);
-	}
+	};
 
 
 
