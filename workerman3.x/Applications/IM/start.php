@@ -8,8 +8,22 @@
 
 	// 接收到浏览器数据时原路返回
 	$httpWorker->onMessage = function($connection,$data){
-		
-		$connection->send(var_dump($data));
+		$return = "";
+		switch ($data) {
+			case '你好':
+				$return = "hello,小可爱";
+				break;
+			case '吃饭了没?':
+				$return = "还没，你请我吃吧！";
+				break;
+			default:
+				$return = "呵呵，你说什么鸟语呢？";
+				break;
+		}
+
+
+		$connection->send($return);
+
 
 	};
 
