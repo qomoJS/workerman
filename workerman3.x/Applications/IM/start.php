@@ -1,6 +1,6 @@
 <?php
 	// 引入Workerman命名空间
-	use Workerman\WebServer
+	use Workerman\WebServer;
 	// 初始化一个worker
 	$httpWorker = new Worker("http://0.0.0.0:2558");
 	// 设置进程数量
@@ -12,7 +12,7 @@
 		$connection->send($data);
 	}
 
-	
+
 
 
 
