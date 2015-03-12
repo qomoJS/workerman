@@ -2,7 +2,7 @@
 	// 引入Workerman命名空间
 	use Workerman\Worker;
 	// 初始化一个worker
-	$httpWorker = new Worker("http://0.0.0.0:2558");
+	$httpWorker = new Worker("websocket://0.0.0.0:2558");
 	// 设置进程数量
 	$httpWorker->count = 4;
 
