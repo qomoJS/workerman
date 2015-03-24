@@ -29,19 +29,8 @@
 	// 
 	$bs = new BusinessWorker();
 
-
-
 	// 指定websocket协议
 	$gateway = new Gateway("websocket://0.0.0.0:2558");
-
-	$gateway->onMessage = function ($clientId,$message){
-
-		// Gateway::sendToCurrentClient($clientId.'----'.$message);
-
-		echo($clientId.'----'.$message);
-
-	};
-
 
 
 
