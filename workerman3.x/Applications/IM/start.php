@@ -31,7 +31,9 @@
 
 	$gateway->onMessage = function ($clientId,$message){
 
-		Gateway::sendToCurrentClient($clientId.'----'.$message);
+		// Gateway::sendToCurrentClient($clientId.'----'.$message);
+
+		echo($clientId.'----'.$message)
 
 	};
 
