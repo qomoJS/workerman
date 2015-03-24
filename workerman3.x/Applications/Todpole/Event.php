@@ -6,7 +6,6 @@
  * @author walkor <walkor@workerman.net>
  * 
  */
-
 use \GatewayWorker\Lib\Gateway;
 
 class Event

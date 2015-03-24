@@ -46,7 +46,9 @@ class Event
                 
                 // 把房间号昵称放到session中
                 $room_id = $message_data['room_id'];
+
                 $client_name = htmlspecialchars($message_data['client_name']);
+                
                 $_SESSION['room_id'] = $room_id;
                 $_SESSION['client_name'] = $client_name;
                 
