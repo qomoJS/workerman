@@ -33,7 +33,7 @@
 
 		// Gateway::sendToCurrentClient($clientId.'----'.$message);
 
-		echo($clientId.'----'.$message)
+		echo($clientId.'----'.$message);
 
 	};
 
