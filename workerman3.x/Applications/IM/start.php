@@ -23,8 +23,13 @@
 	// 	$connection->send($return);
 	// };
 
-
+	use \GatewayWorker\BusinessWorker;
 	use \GatewayWorker\Gateway;
+
+	// 
+	$bs = new BusinessWorker();
+
+
 
 	// 指定websocket协议
 	$gateway = new Gateway("websocket://0.0.0.0:2558");
