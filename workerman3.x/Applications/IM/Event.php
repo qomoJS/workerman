@@ -19,9 +19,8 @@ class Event
     */
    public static function onMessage($client_id, $message)
    {
+
 		
-		
-		echo($client_id.'----'.$message);
 
    }
    
